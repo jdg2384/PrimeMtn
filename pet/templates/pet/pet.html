@@ -1,0 +1,52 @@
+
+
+
+{% extends "head/header.html" %}
+{% block content %}
+{% for post in post %}
+
+
+	
+	  <h5>{{ post.date|date:"Y-m-d" }}<a href="/beer/{{post.id}}"> {{post.beer}}</a></h5>
+
+	
+
+{% endfor %}	
+{% endblock %}
+
+<div class="beer-page ">
+	<img src='http://104.236.215.11{{ post.beerbg.url }}' class="logo" height="100%" width="100%" class="img-responsive">
+	<div class="title">
+		<div class="col-md-12 text-center">
+    		<img src='http://104.236.215.11{{ post.logo.url }}' class="beer-logo" alt='Sample Image'/ height="115">
+			<h1></h1>
+		</div>
+	</div>
+
+	<div class="col-lg-3 beerbg_table"></div>
+
+	<div class="col-lg-6 text-center beerbg_table">
+	
+	 	<h2>{{ post.brewery}}</h2>
+    	<h1>{{ post.date|date:"Y-m-d" }}{{ post.beer }}</a></h1>
+    	<h5>{{ post.description}}</h5>
+		<h2>{{ post.alcohol}}</h2>
+	</div>
+	
+	
+	 <div class="col-lg-3 beerbg_table"></div>
+
+</div>
+
+<div class="beer">
+    <div class="container">
+       <a>
+        <div class="col-xs-6 col-md-1 text-center"> 
+        	<div class="beer-card">
+        		
+        		<img src='http://127.0.0.1:8000{{ post.logo.url }}' alt='Sample Image'/ height="30">
+        	</div>
+        </div>
+    	</a>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+{% extends "head/header.html" %}
+{% block content %}
+{% load staticfiles %}
+{% load contactme %}
+
+
+
+
+
+<div class="row-fluid">
+    <div class="no-gutters">
+        {% include 'special/includes/special_include.html' %}
+    </div>
+</div>
+    
+    <div class="fluid-container" >
+        <div class="Containers con1 no-gutters1 col-lg-12 text-center">
+            <div class="row no-gutters1">
+                <div class="title">
+                    <h1 id="womens">Womens</h1>
+                </div>
+                <hr class="sep">
+                   {% include 'womens/includes/womens_include.html' %} 
+            </div>
+       </div>
+    </div>
+
+    <div class="fluid-container" >
+        <div class="Containers con1 no-gutters1 col-lg-12 text-center">
+            <div class="row no-gutters1">
+                <div class="title">
+                    <h1 id="mens">Mens</h1>
+                </div>
+                <hr class="sep">
+                   {% include 'mens/includes/mens_include.html' %} 
+            </div>
+       </div>
+    </div>
+
+    <div class="fluid-container">
+        <div class="Containers con1 no-gutters1 col-lg-12 text-center">
+            <div class="row no-gutters1">
+                <div class="title">
+                    <h1 id="outdoor">Outdoor Sporting Good</h1>
+                </div>
+                <hr class="sep">
+                    {% include 'outdoor/includes/outdoor_include.html' %}
+            </div>
+        </div>
+    </div>
+
+    <div class="fluid-container">
+        <div class="Containers con1 no-gutters1 col-lg-12 text-center">
+            <div class="row no-gutters1">
+                <div class="title">
+                    <h1 id="access">Accessories</h1>
+                </div>
+                <hr class="sep">
+                    {% include 'access/includes/access_include.html' %}
+            </div>
+        </div>
+    </div>
+
+    <div class="fluid-container">
+        <div class="Containers con1 no-gutters1 col-lg-12 text-center">
+            <div class="row no-gutters1">
+                <div class="title">
+                    <h1 id="pet">Pets</h1>
+                </div>
+                <hr class="sep">
+                    {% include 'pet/includes/pet_include.html' %}
+            </div>
+        </div>
+    </div>
+
+
+
+    
+ 
+
+
+{% endblock %}
+
+            {% include 'head/beers.html' %}
+            {% include 'head/includes/htmlsnippet.html' %}

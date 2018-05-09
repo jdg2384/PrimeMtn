@@ -1,0 +1,58 @@
+{% extends "head/header.html" %}
+
+{% block content %}
+
+
+
+
+<div class="container-fluid beer-page">
+  <div class="row">
+    <div class="col-lg-7 col-sm-7 text-center">
+      </br></br></br>
+      <img src='http://104.236.215.11{{ post.logo.url }}' class="beer-logo" alt='Sample Image' class="img-responsive">
+    </div>
+    <div class="col-lg-5 col-sm-5 dark text-center">
+      <ul class="list-inline">
+        <li><h1>{{ post.name }}</h1></li>
+        <li><h3>&nbsp;&nbsp;&nbsp;<ins>{{ post.merchant }}</ins></h3></li>
+      </ul> 
+      <hr>
+      <ul class="list-inline">
+        <li><del><h3>${{ post.price }}</h3></del></li>
+        <li><h3>PRICE&nbsp; <mark>${{ post.discount }}</mark></h3></li>
+        
+
+      </ul>
+      <h4 class="text-left">{{ post.description}}</h4>
+      <hr>
+      <a class="btn btn-light" href="{{ post.url}}" target="blank">Buy Now</a>
+    <hr>
+    <div class="responsive-vide">
+     <iframe  src="{{post.youtube}}" frameborder="0" allowfullscreen></iframe>
+     </div>
+     </div>
+     <div class="col-lg-12 col-xs-12 text-center">
+     <hr>
+      <ul class="list-inline social-links">
+      <li><i></i><h3>Share with friends</h3></li>
+
+        <li class="twitter"><a href="https://twitter.com/intent/tweet?url={{ post.url}}" target="blank"><i class="fa fa-twitter"></i></a></li>
+
+        <li class="facebook"><a href="https://www.facebook.com/sharer.php?u={{ post.url}}" target="blank"><i class="fa fa-facebook"></i></a></li>
+
+        <!-- <li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
+
+        <li class="gplus"><a href="https://plus.google.com/share?url={{ post.url}}" target="blank"><i class="fa fa-google-plus"></i></a></li>
+</ul>
+</div>
+        <!-- <li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+         
+
+{% endblock %}
+
+138.197.45.73

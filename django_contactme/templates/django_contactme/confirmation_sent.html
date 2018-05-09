@@ -1,0 +1,23 @@
+{% extends "head/header.html" %}
+
+{% block title %}{{ block.super }}&nbsp;&raquo;&nbsp;confirmation sent{% endblock %}
+
+{% block content %}
+<section class="main-section contact">
+<div class="container">
+<h2>Please confirm your email address</h2>
+	 <div class="row">
+	 <div class="col-md-4 text-center"></div>
+		<div class="col-md-4 text-center">
+    		<div class="">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+			  </br>
+			  <h6>A confirmation message has been sent to your email. Please click on the link in the message to verify that your email address does exist and it is being used by you.</h6>
+			  <h3>Thank you!</h3>
+		</div>
+		<div class="col-md-4 text-left"></div>
+	</div>
+</div>	
+</section>  
+{% endblock %}

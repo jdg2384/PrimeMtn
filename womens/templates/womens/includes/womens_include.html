@@ -1,0 +1,20 @@
+{% for wost in wost %}
+<div class="col-xs-6 col-md-3 text-center">
+	<a href="/womens/{{wost.id}}">
+		<div class="cards">
+			<img src='http://104.236.215.11{{ wost.logo.url }}' alt='Sample Image'>
+			<h4>{{ wost.name }}</h4>
+			<ul class="list-inline">
+				<li><p>Sold By&nbsp;&nbsp;{{wost.merchant }}</p></li>
+			</ul>
+		</div>
+		<ul class="list-inline inlineprice">
+			<li class="inlineprice1"><del><h5>${{wost.price }}</h5></del></li>
+			<li class="inlineprice2"><h5><strong>PRICE&nbsp; ${{wost.discount }}</strong></h5></li>
+		</ul>
+	</a>
+</div>
+{% endfor %}
+
+
+

@@ -1,0 +1,23 @@
+
+
+
+
+
+{% block content %}
+	{% for post in object_list %}
+	  <div class="row">
+            <div class="col-lg-4">
+                
+                <img src='http://127.0.0.1:8000{{ post.logo.url }}' alt='Sample Image'/ height="115">
+
+
+	
+		<h2>{{ post.date|date:"Y-m-d" }}<a href="/beers/{{post.id}}">  {{ post.beer }}</a></h2>
+		<h3>{{ post.brewery}}</h3>
+		<h4>{{ post.description}}</h4>
+		<h5>{{ post.alcohol}}</h5>
+
+            </div>
+        </div>
+	{% endfor %}
+{% endblock %}

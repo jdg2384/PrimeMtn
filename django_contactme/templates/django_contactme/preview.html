@@ -1,0 +1,32 @@
+{% extends "head/header.html" %}
+
+{% block title %}{{ block.super }}&nbsp;&raquo;&nbsp;preview{% endblock %}
+
+{% block content %}
+  <H4>Get into contact</H4>
+
+  {% if not form.errors %}
+  
+
+
+<section id="contactUs">
+  <div class="container">
+    
+    <div class="col-md-4 text-left"></div>
+    <div class="col-md-4 text-left">
+    <div>
+        <h4>Contact Message Preview</h4>
+        <div style="background:#006332">
+          {{ form.message.value|linebreaks }}
+        </div>
+      </div>
+    {% include "django_contactme/form.html" %}</div>
+      <div class="col-md-4 text-left"></div>
+   
+  </div>
+</section>
+
+  {% endif %}
+
+  
+{% endblock %}
